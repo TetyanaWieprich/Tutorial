@@ -9,7 +9,7 @@ def calculate_cost(fca_price, quantity, logistics, duty_rate, vat_rate):
     return fca_total, ddp_total
 
 # Загрузка данных прайс-листа
-file_path = "Прайс Экспорт.xlsx"
+file_path = "Прайс Экспорт1.xlsx"
 df = pd.read_excel(file_path, sheet_name="Лист1", skiprows=2)
 df.columns = ["Продукция", "Тип упаковки", "Вес нетто (кг)", "Кол-во в ящике", "Ящиков на паллете", "Срок годности", "Цена FCA (грн)", "Цена FCA (EUR)", "Курс"]
 
